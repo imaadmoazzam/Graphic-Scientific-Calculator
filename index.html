@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Scientific Calculator Final Project</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+  
+<body>
+  <div id="fullScreen">
+    <div id="leftFullScreen">
+      <div id="leftTop">
+        <div id="leftTopA" class="numpadbutton">
+          <button id="helpbut" class="numpadbutton">Help?</button>
+        </div>
+      </div>
+      <div id="leftBot"></div>
+    </div>
+    <div id="CalculatorBody">
+      <div id="CalculatorBottom">
+        <div id="calcScreen"></div>
+        <div id="advOperations">
+          <div id="topAdv">
+            <div id="secfun" class="calbutton">
+              <button id="but2nd" class="numpadbutton">2nd</button>
+            </div>
+            <div id="sinetrig" class="calbutton">
+              <button id="sinbut" class="numpadbutton">sin</button>
+            </div>
+            <div id="cosinetrig" class="calbutton">
+              <button id="cosbut" class="numpadbutton">cos</button>
+            </div>
+            <div id="tangenttrig" class="calbutton">
+              <button id="tanbut" class="numpadbutton">tan</button>
+            </div>
+          </div>
+          <div id="botAdv">
+            <div id="root" class="calbutton">
+              <button id="rootbut" class="numpadbutton">²√x</button>
+            </div>
+            <div id="powers" class="calbutton">
+              <button id="powerbut" class="numpadbutton">x^ʸ</button>
+            </div>
+            <div id="leftbrack" class="calbutton">
+              <button id="lbrackbut" class="numpadbutton">(</button>
+            </div>
+            <div id="rightbrack" class="calbutton">
+              <button id="rbrackbut" class="numpadbutton">)</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="CalculatorTop">
+        <div id="numPad">
+          <div id="numPad1">
+            <div id="calButton11" class="calbutton"> <!-- first digit is row number (1-4 vertically), 2nd digit is button number (1-3 horizontally) -->
+              <button id="button7" class="numpadbutton">7</button>
+            </div> 
+            <div id="calButton12" class="calbutton">
+              <button id="button8" class="numpadbutton">8</button>
+            </div>
+            <div id="calButton13" class="calbutton">
+              <button id="button9" class="numpadbutton">9</button>
+            </div>
+          </div>
+          <div id="numPad2">
+            <div id="calButton21" class="calbutton">
+              <button id="button4" class="numpadbutton">4</button>
+            </div>
+            <div id="calButton22" class="calbutton">
+              <button id="button5" class="numpadbutton">5</button>
+            </div>
+            <div id="calButton23" class="calbutton">
+              <button id="button6" class="numpadbutton">6</button>
+            </div>
+          </div>
+          <div id="numPad3">
+            <div id="calButton31" class="calbutton">
+              <button id="button1" class="numpadbutton">1</button>
+            </div>
+            <div id="calButton32" class="calbutton">
+              <button id="button2"class="numpadbutton">2</button>
+            </div>
+            <div id="calButton33" class="calbutton">
+              <button id="button3" class="numpadbutton">3</button>
+            </div>
+          </div>
+          <div id="numPad4">
+            <div id="calButton41a" class="calbutton">
+              <button id="buttondot" class="numpadbutton">.</button>
+            </div>
+            <div id="calButton41b" class="calbutton">
+              <button id="buttonans" class="numpadbutton">ans</button>
+            </div>
+            <div id="calButton42">
+              <button id="button0" class="numpadbutton">0</button>
+            </div>
+            <div id="calButton43">
+              <button id="buttoneq" class="numpadbutton">=</button>
+            </div>
+          </div>
+        </div>
+        <div id="operations">
+          <div id="operLeft"></div>
+          <div id="operMain">
+            <div id="addition" class="baseOperations">
+              <button id="addBut"class="numpadbutton">+</button>
+            </div>
+            <div id="subtraction" class="baseOperations">
+              <button id="subBut"class="numpadbutton">-</button>
+            </div>
+            <div id="multiplication" class="baseOperations">
+              <button id="multiBut"class="numpadbutton">×</button>
+            </div>
+            <div id="division" class="baseOperations">
+              <button id="diviBut"class="numpadbutton">÷</button>
+            </div>
+            <div id="clear">
+              <button id="clearBut" class="numpadbutton">A/C</button>
+            </div>
+          </div>
+          <div id="operRight"></div>
+        </div>
+      </div>
+    </div>
+    <div id="rightFullScreen">
+      <div id="rightTop">
+        <button id="colorbut" class="numpadbutton">Light Mode</button>
+      </div>
+      <div id="rightBot">
+        <div id="historyText"></div>
+        <div id="historybutsec">
+          <button id="historybut" class="numpadbutton">View Previous Answers</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <script src="script.js"></script>
+</body>
+
+</html>

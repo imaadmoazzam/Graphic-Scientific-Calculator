@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Noto+Sans+JP:wght@100..900&family=Press+Start+2P&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=VT323&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, 
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(105, 147, 183);
+}
+
+#fullScreen {
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    height: 100%;
+}
+
+#leftFullScreen {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(11, 19, 68);
+}
+
+#leftTop {
+    flex: 10%;
+    display: flex;
+}
+
+#leftBot {
+    flex: 90%;
+    display: flex;
+    flex-direction: column;
+    white-space: pre-line;
+    margin-top: 10px;
+    font-family: 'Jaro', sans-serif;
+    font-size: 24px;
+    padding: 10px;
+    border-style: inherit;
+    border-width: 5px;
+    border-color: rgb(6, 28, 64);
+}
+
+#rightFullScreen {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 10px;
+    border-color: rgb(11, 19, 68);
+}
+
+#rightTop {
+    flex: 5%;
+}
+
+#rightBot {
+    flex: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+#historyText {
+    flex: 90%;
+    font-family: 'Jaro', sans-serif;
+    font-size: 50px;
+    flex-grow: 0;
+    overflow-wrap: anywhere;
+    border-style: inset;
+    border-color: rgb(6, 28, 64);
+}
+
+#historybutsec {
+    flex: 10%;
+}
+
+#CalculatorBody {
+    display: flex;
+    flex: 3;
+    border-color: rgb(0, 58, 89);
+    flex-direction: column;
+    border-style: outset;
+    border-width: 15px;
+}
+
+#CalculatorBottom {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#CalculatorTop {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+}
+
+#numPad {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(3, 83, 164);
+}
+
+#numPad1 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#numPad2 {
+    flex: 1;
+    display: flex;
+}
+
+#numPad3 {
+    flex: 1;
+    display: flex;
+}
+
+#numPad4 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#calButton42 {
+    flex: 2;
+}
+
+#calButton43 {
+    flex: 2;
+}
+
+#operations {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(6, 28, 64);
+}
+
+#operLeft {
+    flex: 1;
+    display: flex;
+}
+
+#operRight {
+    flex: 1;
+    display: flex;
+}
+
+#operMain {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+#advOperations {
+    flex: 7;
+    display: flex;
+    background-color: rgb(3, 83, 164);
+    border-width: 10px;
+    border-color: rgb(36, 97, 189);
+    flex-direction: column;
+}
+
+#topAdv {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#botAdv {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(6, 28, 64);
+}
+
+#calcScreen {
+    flex-grow: 0;
+    flex: none;
+    height: 100px;
+    display: flex;
+    background-color: rgb(0, 109, 170); 
+    align-items: center;
+    justify-content: flex-end;
+    text-overflow: clip;
+    padding: 50px;
+    font-family: 'Jaro', sans-serif;
+    font-size: 80px;
+    width: 520px;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-style: inset;
+    border-width: 10px;
+    border-color: rgb(13, 80, 156)
+}
+
+.active {
+    background-color: rgb(25, 60, 95);
+    color: white;
+}
+
+.lightActive {
+    background-color: black;
+    color: white
+}
+
+body.dark-mode {
+    background-color: rgb(23, 30, 70);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.dark-mode .numpadbutton {
+    background-color: rgb(25, 74, 123);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.dark-mode #calcScreen {
+    background-color: rgb(25, 74, 123);
+    transition: all 0.3s ease;
+}
+
+.calbutton {
+    flex: 1;
+    display: flex;
+}
+
+.baseOperations {
+    flex: 1;
+    display: flex
+}
+
+.numpadbutton {
+    text-align: center;
+    background-color: rgb(78, 128, 174);
+    width: 100%;
+    height: 100%;
+    border-color: rgb(33, 64, 100);
+    font-size: 50px;
+    border-style: inset;
+    border-width: 5px;
+    font-family: 'Jaro', sans-serif;
+}
+
+.numpadbutton:hover {
+    background-color: rgb(31, 79, 126);
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
